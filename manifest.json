@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Fødselsnummer-generator",
+  "description": "Generer semigyldige fødselsnumre med et tastetrykk. ",
+  "version": "1.0.1",
+  "homepage_url": "https://github.com/AudunLiberg/Fodselsnummer-generator",
+  "icons": {
+    "48": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
