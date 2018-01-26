@@ -48,7 +48,7 @@ function generateFodselsnummerWithYear(year) {
 }
 
 document.addEventListener("keydown", function (e) {
-    if (!e.ctrlKey || !e.shiftKey) return;
+    if (!(e.ctrlKey && e.shiftKey)) return;
 	
     if (e.keyCode >= 48 && e.keyCode <= 57) {
 		e.preventDefault();
