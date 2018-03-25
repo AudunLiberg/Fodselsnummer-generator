@@ -10,3 +10,7 @@
 
 ## Gyldighet
 Utvidelen genererer fødselsnumre med korrekte kontrollsifre, men validerer ikke individsifrene.
+
+## Last ned
+- [Chrome Extension](https://chrome.google.com/webstore/detail/f%C3%B8dselsnummer-generator/lbpfjfoibjgmcelcabklemjhmhbkpfmb)
+- [Firefox Add-on](https://addons.mozilla.org/nn-NO/firefox/addon/f%C3%B8dselsnummer-generator/)
