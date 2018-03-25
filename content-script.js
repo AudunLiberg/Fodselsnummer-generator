@@ -48,7 +48,9 @@ function generateFodselsnummerWithYear(year) {
 }
 
 document.addEventListener("keydown", function (e) {
-    if (e.ctrlKey && e.shiftKey && e.keyCode >= 48 && e.keyCode <= 57) {
+    if (!(e.ctrlKey && e.shiftKey)) return;
+	
+    if (e.keyCode >= 48 && e.keyCode <= 57) {
 		e.preventDefault();
 		var number = e.keyCode - 48;
 		var c = document.activeElement;
@@ -56,14 +58,14 @@ document.addEventListener("keydown", function (e) {
 		var fodselsnummer = generateFodselsnummerWithYear(year);
 		c.value = fodselsnummer;
     }
-	if (e.ctrlKey && e.shiftKey && e.keyCode == 79) {
+	if (e.keyCode == 79) {
 		e.preventDefault();
 		var c = document.activeElement;
 		var year = randomNumberInRange(0, 9);
 		var fodselsnummer = generateFodselsnummerWithYear(year);
 		c.value = fodselsnummer;
     }
-	if (e.ctrlKey && e.shiftKey && e.keyCode == 70) {
+	if (e.keyCode == 70) {
 		e.preventDefault();
 		var c = document.activeElement;
 		if (c.value.length == 6 && !isNaN(c.value)) {
